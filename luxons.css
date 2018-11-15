@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500,700');
+
+.l-sans-serif {
+  font-family: heebo, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+
+.l-bg-navy {
+  background-color: #000711;
+}
+
+.l-tracked-tightish {
+  letter-spacing: -.025em;
+}
+
+a {
+  color: inherit;
+}
