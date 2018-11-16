@@ -25,13 +25,69 @@ description = "Not all discoveries are easily explained."
 
 
 [[items]]
-categories = ["inventory"]
+  id = "dim"
+  categories = ["inventory"]
 
-[[items.en]]
-title = "DIM"
-description = "Build loadouts quickly with powerful search functionality, and apply them at the touch of a button."
+  [items.en]
+  title = "DIM"
+  description = "Build loadouts quickly with powerful search functionality, and apply them at the touch of a button."
 
-[[items.links]]
-[items.links.en]
-title = "Web"
-url = "https://app.destinyitemmanager.com/"
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://app.destinyitemmanager.com/"
+
+[[items]]
+  id = "ishtar-commander"
+  categories = ["inventory"]
+
+  [items.en]
+  title = "Ishtar Commander"
+  description = "A beautiful gear manager for Destiny 2, available natively on the iOS, Android, Windows 10 and MacOS stores."
+
+  [[items.links]]
+    [items.links.en]
+    title = "iOS"
+    url = "https://itunes.apple.com/us/app/ishtar-commander-for-destiny-2/id1030835428?mt=8"
+
+  [[items.links]]
+    [items.links.en]
+    title = "Android"
+    url = "https://play.google.com/store/apps/details?id=com.unintuitive.IshtarCommander"
+
+  [[items.links]]
+    [items.links.en]
+    title = "Windows 10"
+    url = "https://www.microsoft.com/en-us/p/ishtar-commander-for-destiny/9pk2z4mf5mns"
+
+  [[items.links]]
+    [items.links.en]
+    title = "MacOS"
+    url = "https://itunes.apple.com/us/app/ishtar-commander/id1353508932?mt=12"
+
+[[items]]
+  id = "braytech-org"
+  categories = ["progression"]
+
+  [items.en]
+  title = "Braytech.org"
+  description = "A beautiful, mobile-friendly display of checklists, clan information, and other (power) tools."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://braytech.org"
+
+[[items]]
+  id = "d2-checklist"
+  categories = ["progression"]
+
+  [items.en]
+  title = "D2 Checklist"
+  description = "The completionist's guide to the Destiny universe, with collectables, triumphs, activities, vendors, collections and more."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://www.d2checklist.com"
+  

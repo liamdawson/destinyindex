@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Community Destiny Resources</title>
-    <link rel="stylesheet" href="../tachyons.css" />
+    <link rel="stylesheet" href="./tachyons.css" />
     <!-- I like getting cute with names -->
-    <link rel="stylesheet" href="../luxons.css" />
+    <link rel="stylesheet" href="./luxons.css" />
   </head>
   <body class="l-bg-navy light-gray l-sans-serif">
     <div class="mw8-ns center pa4">
       <h1 class="white f1 l-tracked-tightish ttu">
-        {{ site.en.title }}
+        Community Destiny Resources
       </h1>
-      <h2 class="lh-title fw3 tracked-mega ttu">{{ site.en.subtitle }}</h2>
+      <h2 class="lh-title fw3 tracked-mega ttu">The Destiny Index</h2>
     </div>
 
     <div class="mw8-ns center ph4 lh-copy">
