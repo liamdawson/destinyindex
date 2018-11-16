@@ -1,0 +1,22 @@
+[build]
+publish = "build"
+command = "yarn run build"
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "/en/"
+  status = 302
+  force = true
+
+[[headers]]
+  [headers.values]
+    Link = '''
+    </tachyons.css>; rel=preload; as=style, \
+    </luxons.css>; rel=preload; as=style'''
+    Content-Security-Policy-Report-Only = "default-src 'none' ; style-src * ; font-src * ; upgrade-insecure-requests; block-all-mixed-content;"
