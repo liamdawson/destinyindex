@@ -91,3 +91,80 @@ description = "Not all discoveries are easily explained."
     title = "Web"
     url = "https://www.d2checklist.com"
   
+[[items]]
+  id = "lowlidev"
+  categories = ["progression"]
+
+  [items.en]
+  title = "lowlidev"
+  description = "View the many worlds of Destiny interactively with legends for every point of interest, further tailored to your personal progression."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://lowlidev.com.au/destiny/maps/"
+
+[[items]]
+  id = "charlemagne"
+  categories = ["chatbots"]
+
+  [items.en]
+  title = "Charlemagne"
+  description = "Discord bot that provides detailed access to Destiny 2 information including statistics and clan information."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://warmind.io/"
+
+[[items]]
+  id = "banshee-44"
+  categories = ["collections"]
+
+  [items.en]
+  title = "Banshee-44"
+  description = "View the perks available on weapons in Destiny 2 and calculate their stats."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://banshee-44.com/"
+
+[[items]]
+  id = "destiny-sets"
+  categories = ["collections"]
+
+  [items.en]
+  title = "Destiny Sets"
+  description = "An extensive list of everything that can be collected, along with helpful indicators (including which items you can currently purchase)."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://destinysets.com/"
+
+[[items]]
+  id = "wtf-is-xur"
+  categories = ["collections"]
+
+  [items.en]
+  title = "Wherethefuckisxur.com"
+  description = "Daily vendor information, and the weekly location and inventory of Xûr."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://wherethefuckisxur.com"
+
+[[items]]
+  id = "destiny-data-explorer"
+  categories = ["miscellaneous"]
+
+  [items.en]
+  title = "Destiny Data Explorer"
+  description = "Explore the items of the Destiny API in their raw glory."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://data.destinysets.com"
