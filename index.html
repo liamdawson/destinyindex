@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Community Destiny Resources</title>
+    <title>{{ i18n site 'title' }}</title>
     <link rel="stylesheet" href="../tachyons.css" />
     <link rel="stylesheet" href="../luxons.css" />
   </head>
@@ -22,7 +22,7 @@
         <p class="f4">{{ i18n . 'description' }}</p>
 
         {{#eachItemInCategory @key}}
-          
+
         <section class="pv1 pl3">
           <h4 class="f3">{{ i18n . 'title' }}</h4>
           <p>{{ i18n . 'description' }}</p>
@@ -36,21 +36,27 @@
         {{/eachItemInCategory}}
       </article>
       {{/each}}
+    </div>
+    <!-- TODO: i18n footer -->
     <footer class="mw8-ns center tc pa4">
-      <p class="i white ml0">
-        "What matters is that the biggest threats to humanity are dealt with.
-        The manner in which you do so is up to you." —Zavala
-      </p>
-      <p class="pv2">
-        <a href="https://github.com/liamdawson/destinyindex/issues/"
-          >Missing a resource? Found an error? Open an issue.</a
-        >
-      </p>
-      <p class="f6">
-        Bungie Content © Bungie, Inc. All rights reserved. Destiny, the Destiny
-        Logo, Bungie and the Bungie logo are among the trademarks of Bungie,
-        Inc.
-      </p>
+      <div class="fl-ns w-50-ns tr-ns pr4-ns">
+        <p>
+          <a class="link gray hover-white db pv2 pv1-ns" href="https://github.com/liamdawson/destinyindex/issues/">Issues and suggestions</a>
+          <a class="link gray hover-white db pv2 pv1-ns" href="https://twitter.com/liamdaws">Author on Twitter</a>
+          <a class="link gray hover-white db pv2 pv1-ns" href="https://github.com/liamdawson/destinyindex/">GitHub</a>
+        </p>
+      </div>
+      <div class="fl-ns w-50-ns tl-ns pl4-ns">
+        <p class="i white pt1-ns">
+          "What matters is that the biggest threats to humanity are dealt with.
+          The manner in which you do so is up to you." —Zavala
+        </p>
+      </div>
+        <p class="f6 cb pt2">
+          Bungie Content © Bungie, Inc. All rights reserved. Destiny, the
+          Destiny Logo, Bungie and the Bungie logo are among the trademarks of
+          Bungie, Inc.
+        </p>
     </footer>
   </body>
 </html>
