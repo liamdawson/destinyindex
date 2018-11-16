@@ -1,0 +1,37 @@
+[site.en]
+title = "Community Destiny Resources"
+subtitle = "The Destiny Index"
+
+
+[categories.inventory.en]
+title = "Inventory Managers"
+description = "Easily move items between your Guardians, and the Vault. Prepare for any activity from the comfort of your phone, tablet or desktop."
+
+[categories.progression.en]
+title = "Progression"
+description = "Reflect, and discover the many secrets of the universe."
+
+[categories.chatbots.en]
+title = "Chatbots"
+description = "Intelligent remnants of the Golden Age. Answering your beck and call."
+
+[categories.collections.en]
+title = "Collections"
+description = "“Guardians desire many things: Glory. Honor. Treasure. Open the vaults again. Show them gifts we give to the worthy. They will come, and we will not have to ask.” —Variks"
+
+[categories.miscellaneous.en]
+title = "Miscellaneous"
+description = "Not all discoveries are easily explained."
+
+
+[[items]]
+categories = ["inventory"]
+
+[[items.en]]
+title = "DIM"
+description = "Build loadouts quickly with powerful search functionality, and apply them at the touch of a button."
+
+[[items.links]]
+[items.links.en]
+title = "Web"
+url = "https://app.destinyitemmanager.com/"
