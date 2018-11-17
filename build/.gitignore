@@ -1,0 +1,8 @@
+**/*
+!**/
+!**/.gitignore
+!**/.gitkeep
+
+# special prebuilt files
+!/index.html
+!/_redirects
