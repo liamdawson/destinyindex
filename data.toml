@@ -19,6 +19,10 @@ description = "Intelligent remnants of the Golden Age. Answering your beck and c
 title = "Collections"
 description = "“Guardians desire many things: Glory. Honor. Treasure. Open the vaults again. Show them gifts we give to the worthy. They will come, and we will not have to ask.” —Variks"
 
+[categories.competitive.en]
+title = "Competitive & Rankings"
+description = ""
+
 [categories.miscellaneous.en]
 title = "Miscellaneous"
 description = "Not all discoveries are easily explained."
@@ -36,6 +40,11 @@ description = "Not all discoveries are easily explained."
     [items.links.en]
     title = "Web"
     url = "https://app.destinyitemmanager.com/"
+
+  [[items.links]]
+    [items.links.en]
+    title = "More Info"
+    url = "https://destinyitemmanager.com/"
 
 [[items]]
   id = "ishtar-commander"
@@ -90,7 +99,7 @@ description = "Not all discoveries are easily explained."
     [items.links.en]
     title = "Web"
     url = "https://www.d2checklist.com"
-  
+
 [[items]]
   id = "lowlidev"
   categories = ["progression"]
@@ -168,3 +177,42 @@ description = "Not all discoveries are easily explained."
     [items.links.en]
     title = "Web"
     url = "https://data.destinysets.com"
+
+[[items]]
+  id = "destiny-trials-report"
+  categories = ["competitive"]
+
+  [items.en]
+  title = "Destiny Trials Report"
+  description = "Gain an edge in the mysterious Trials of the Nine."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://trials.report"
+
+[[items]]
+  id = "destiny-tracker"
+  categories = ["competitive"]
+
+  [items.en]
+  title = "Destiny Tracker"
+  description = "Measure your strength via statistics, leaderboards, and rankings. Make allies against the darkness with clan and LFG tools."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://destinytracker.com"
+
+[[items]]
+  id = "guardian-gg"
+  categories = ["competitive"]
+
+  [items.en]
+  title = "Guardian.gg"
+  description = "Crucible statistics broken down by platform, class, weapon and more."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://guardian.gg"
