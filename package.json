@@ -7,8 +7,8 @@
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "build": "npm-run-all build:*",
-    "build:templates": "node index.js",
+    "build": "npm-run-all -p build:*",
+    "build:html": "node index.js",
     "build:css": "npm-run-all build:css:*",
     "build:css:purge": "purgecss --css tachyons.css luxons.css --content index.html --out build",
     "build:css:minify": "cleancss -o build/style.css build/luxons.css build/tachyons.css",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "clean-css-cli": "^4.2.1",
+    "html-minifier": "^3.5.21",
     "live-server": "^1.2.0",
     "nodemon": "^1.18.6",
     "npm-run-all": "^4.1.3",

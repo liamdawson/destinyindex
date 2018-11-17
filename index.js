@@ -1,6 +1,7 @@
 const fs = require("fs");
 const toml = require("@iarna/toml");
 const Handlebars = require("handlebars");
+const HtmlMinifier = require('html-minifier');
 
 const templateSource = fs.readFileSync("index.html", "utf8");
 
@@ -37,6 +38,12 @@ Handlebars.registerHelper("stringify", (obj) => JSON.stringify(obj, undefined, 2
 languageCodes.forEach(code => {
   fs.writeFileSync(
     "build/" + code + "/index.html",
-    Handlebars.compile(templateSource)(ctx)
+    HtmlMinifier.minify(Handlebars.compile(templateSource)(ctx), {
+      collapseWhitespace: true,
+      removeComments: true,
+      removeRedundantAttributes: true,
+      sortAttributes: true,
+      sortClassName: true
+    })
   );
 });
