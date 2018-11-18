@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "@iarna/toml": "^2.2.0",
-    "copy": "^0.3.2",
     "handlebars": "^4.0.12"
   },
   "devDependencies": {

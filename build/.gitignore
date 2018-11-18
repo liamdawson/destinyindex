@@ -6,3 +6,5 @@
 # special prebuilt files
 !/index.html
 !/_redirects
+
+!/img/**/*
