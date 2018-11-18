@@ -13,7 +13,7 @@
     "build:css:purge": "purgecss --css tachyons.css luxons.css --content index.html --out build",
     "build:css:minify": "cleancss -o build/style.css build/luxons.css build/tachyons.css",
     "dev": "npm-run-all -rp dev:*",
-    "dev:serve": "live-server --no-browser --entry-file=index.html build/",
+    "dev:serve": "live-server --no-browser --entry-file=index.html --wait=500 build/",
     "dev:watch": "nodemon -x npm run build"
   },
   "dependencies": {

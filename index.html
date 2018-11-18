@@ -16,7 +16,10 @@
     <div class="mw8-ns center ph4 lh-copy">
       {{#each categories}}
       <article class="pv6">
-        <h3 class="lh-title f2 ttu" id="{{ @key }}">{{ i18n . 'title' }}</h3>
+        <div class="l-category-header-row">
+          <img src="../img/{{ @key }}.svg" alt="" class="dib pr3 l-category-header-img">
+          <h3 class="lh-title f2 ttu" id="{{ @key }}"> {{ i18n . 'title' }}</h3>
+        </div>
 
         <p class="f4">{{ i18n . 'description' }}</p>
 
