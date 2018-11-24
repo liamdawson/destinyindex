@@ -17,8 +17,12 @@
       {{#each categories}}
       <article class="pv6">
         <div class="l-category-header-row">
-          <img src="../img/{{ @key }}.svg" alt="" class="dib pr3 l-category-header-img">
-          <h3 class="lh-title f2 ttu" id="{{ @key }}"> {{ i18n . 'title' }}</h3>
+          <img
+            src="../img/{{ @key }}.svg"
+            alt=""
+            class="dib pr3 l-category-header-img"
+          />
+          <h3 class="lh-title f2 ttu" id="{{ @key }}">{{ i18n . 'title' }}</h3>
         </div>
 
         <p class="f4">{{ i18n . 'description' }}</p>
@@ -43,9 +47,21 @@
     <footer class="mw8-ns center tc pa4">
       <div class="fl-ns w-50-ns tr-ns pr4-ns">
         <p>
-          <a class="link gray hover-white db pv2 pv1-ns" href="https://github.com/liamdawson/destinyindex/issues/">Issues and suggestions</a>
-          <a class="link gray hover-white db pv2 pv1-ns" href="https://twitter.com/liamdaws">Author on Twitter</a>
-          <a class="link gray hover-white db pv2 pv1-ns" href="https://github.com/liamdawson/destinyindex/">GitHub</a>
+          <a
+            class="link gray hover-white db pv2 pv1-ns"
+            href="https://github.com/liamdawson/destinyindex/issues/"
+            >Issues and suggestions</a
+          >
+          <a
+            class="link gray hover-white db pv2 pv1-ns"
+            href="https://twitter.com/liamdaws"
+            >Author on Twitter</a
+          >
+          <a
+            class="link gray hover-white db pv2 pv1-ns"
+            href="https://github.com/liamdawson/destinyindex/"
+            >GitHub</a
+          >
         </p>
       </div>
       <div class="fl-ns w-50-ns tl-ns pl4-ns">
@@ -54,11 +70,27 @@
           The manner in which you do so is up to you." —Zavala
         </p>
       </div>
-        <p class="f6 cb pt2">
-          Bungie Content © Bungie, Inc. All rights reserved. Destiny, the
-          Destiny Logo, Bungie and the Bungie logo are among the trademarks of
-          Bungie, Inc.
-        </p>
+      <p class="f6 cb pt2">
+        Bungie Content © Bungie, Inc. All rights reserved. Destiny, the Destiny
+        Logo, Bungie and the Bungie logo are among the trademarks of Bungie,
+        Inc.
+      </p>
     </footer>
+
+    <!-- GA until I decide on a better way to track site usage -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-65876159-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-65876159-4");
+    </script>
   </body>
 </html>
