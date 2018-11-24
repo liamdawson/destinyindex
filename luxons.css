@@ -25,9 +25,11 @@ a {
 
 .l-category-header-row h3 {
   flex: 1;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .l-category-header-img {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   max-width: 5rem;
 }
