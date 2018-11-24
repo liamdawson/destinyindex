@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ i18n site 'title' }}</title>
+    <!-- GA until I decide on a better way to track site usage -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-65876159-4", "auto");
+      ga("send", "pageview");
+    </script>
+
     <link rel="stylesheet" href="../style.css" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="description" content="{{ i18n site 'description' }}" />
@@ -38,11 +64,7 @@
           <p>{{ i18n . 'description' }}</p>
 
           {{#each links}}
-          <a
-            class="dib ph2 gray hover-white link"
-            href="{{ i18n . 'url' }}"
-            onclick="return trackOutboundLink(this);"
-          >
+          <a class="dib ph2 gray hover-white link" href="{{ i18n . 'url' }}">
             {{ i18n . 'title' }}
           </a>
           {{/each}}
@@ -58,19 +80,16 @@
           <a
             class="link gray hover-white db pv2 pv1-ns"
             href="https://github.com/liamdawson/destinyindex/issues/"
-            onclick="return trackOutboundLink(this);"
             >Issues and suggestions</a
           >
           <a
             class="link gray hover-white db pv2 pv1-ns"
             href="https://twitter.com/liamdaws"
-            onclick="return trackOutboundLink(this);"
             >Author on Twitter</a
           >
           <a
             class="link gray hover-white db pv2 pv1-ns"
             href="https://github.com/liamdawson/destinyindex/"
-            onclick="return trackOutboundLink(this);"
             >GitHub</a
           >
         </p>
@@ -88,30 +107,35 @@
       </p>
     </footer>
 
-    <!-- GA until I decide on a better way to track site usage -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-65876159-4"
-    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-65876159-4");
+      var outboundLinks = document.getElementsByTagName("a");
+      for (var i = 0; i < outboundLinks.length; i++) {
+        var link = outboundLinks[i];
+        link.addEventListener("click", function(event) {
+          if (ga) {
+            event.preventDefault();
 
-      var trackOutboundLink = function(el) {
-        var url = el.href;
-        ga("send", "event", "outbound", "click", url, {
-          transport: "beacon",
-          hitCallback: function() {
-            document.location = url;
+            var url = event.target.href;
+            var navigatingToOutbound = false;
+
+            function navigateToOutbound() {
+              if (!navigatingToOutbound) {
+                navigatingToOutbound = true;
+                document.location = url;
+              }
+            }
+
+            setTimeout(navigateToOutbound, 1000);
+
+            ga("send", "event", "outbound", "click", url, {
+              transport: "beacon",
+              hitCallback: navigateToOutbound
+            });
           }
         });
-      };
+      }
     </script>
   </body>
 </html>
