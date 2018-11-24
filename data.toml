@@ -230,3 +230,16 @@ description = "Not all discoveries are easily explained."
     [items.links.en]
     title = "Web"
     url = "https://www.ishtar-collective.net/"
+
+[[items]]
+  id = "raid-report"
+  categories = ["competitive"]
+
+  [items.en]
+  title = "Destiny Raid Report"
+  description = "Statistics on Destiny's current raid encounters, including information on individual players."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://raid.report/"
