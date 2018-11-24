@@ -104,8 +104,6 @@
       gtag("config", "UA-65876159-4");
 
       var trackOutboundLink = function(el) {
-        if (document.location.hostname !== 'www.destinyindex.com') return true;
-
         var url = el.href;
         ga("send", "event", "outbound", "click", url, {
           transport: "beacon",
@@ -113,8 +111,6 @@
             document.location = url;
           }
         });
-
-        return false;
       };
     </script>
   </body>
