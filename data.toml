@@ -243,3 +243,21 @@ description = "Not all discoveries are easily explained."
     [items.links.en]
     title = "Web"
     url = "https://raid.report/"
+
+[[items]]
+  id = "little-light"
+  categories = ["inventory"]
+
+  [items.en]
+  title = "Little Light"
+  description = "An item manager to make your guardian's life easier."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Android"
+    url = "https://play.google.com/store/apps/details?id=me.markezine.luzinha"
+
+  [[items.links]]
+    [items.links.en]
+    title = "iOS"
+    url = "https://itunes.apple.com/us/app/little-light-for-destiny-2/id1373037254?ls=1&mt=8"
