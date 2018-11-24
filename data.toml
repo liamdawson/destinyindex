@@ -1,6 +1,7 @@
 [site.en]
 title = "Community Destiny Resources"
 subtitle = "The Destiny Index"
+description = "A collection of community resources for Bungie's Destiny series, many of which will improve the way you play."
 
 
 [categories.inventory.en]
@@ -216,3 +217,16 @@ description = "Not all discoveries are easily explained."
     [items.links.en]
     title = "Web"
     url = "https://guardian.gg"
+
+[[items]]
+  id = "ishtar-collective"
+  categories = ["miscellaneous"]
+
+  [items.en]
+  title = "Ishtar Collective"
+  description = "The most comprehensive collection of Destiny lore since the Golden Age."
+
+  [[items.links]]
+    [items.links.en]
+    title = "Web"
+    url = "https://www.ishtar-collective.net/"
