@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ i18n site 'title' }}</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="icon" href="/favicon.ico">
-    <meta name="description" content="{{ i18n site 'description' }}">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="description" content="{{ i18n site 'description' }}" />
   </head>
   <body class="l-bg-navy light-gray l-sans-serif">
     <div class="mw8-ns center pa4">
@@ -24,7 +24,9 @@
             alt=""
             class="dib pr3 l-category-header-img"
           />
-          <h3 class="lh-title f3 f2-ns ttu" id="{{ @key }}">{{ i18n . 'title' }}</h3>
+          <h3 class="lh-title f3 f2-ns ttu" id="{{ @key }}">
+            {{ i18n . 'title' }}
+          </h3>
         </div>
 
         <p class="f4">{{ i18n . 'description' }}</p>
@@ -36,7 +38,11 @@
           <p>{{ i18n . 'description' }}</p>
 
           {{#each links}}
-          <a class="dib ph2 gray hover-white link" href="{{ i18n . 'url' }}">
+          <a
+            class="dib ph2 gray hover-white link"
+            href="{{ i18n . 'url' }}"
+            onclick="return trackOutboundLink(this);"
+          >
             {{ i18n . 'title' }}
           </a>
           {{/each}}
@@ -52,16 +58,19 @@
           <a
             class="link gray hover-white db pv2 pv1-ns"
             href="https://github.com/liamdawson/destinyindex/issues/"
+            onclick="return trackOutboundLink(this);"
             >Issues and suggestions</a
           >
           <a
             class="link gray hover-white db pv2 pv1-ns"
             href="https://twitter.com/liamdaws"
+            onclick="return trackOutboundLink(this);"
             >Author on Twitter</a
           >
           <a
             class="link gray hover-white db pv2 pv1-ns"
             href="https://github.com/liamdawson/destinyindex/"
+            onclick="return trackOutboundLink(this);"
             >GitHub</a
           >
         </p>
@@ -93,6 +102,16 @@
       gtag("js", new Date());
 
       gtag("config", "UA-65876159-4");
+
+      var trackOutboundLink = function(el) {
+        var url = el.href;
+        ga("send", "event", "outbound", "click", url, {
+          transport: "beacon",
+          hitCallback: function() {
+            document.location = url;
+          }
+        });
+      };
     </script>
   </body>
 </html>
